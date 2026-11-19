@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: fantasy;
+}
+
+.Logo{
+    z-index: 999;
+    font-size: 3.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin-left: 185px;
+}
+
+.nav-menu{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    font-weight: 90;
+    color: #fff;
+    transition: .3s ease;
+}
+
+
+
+.home{
+    padding: 100px 199px;
+    position: relative;
+    width: 100%;
+    margin-top: 91px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(3, 96, 251, 0.3);
+    width: 100%;
+    height: 164%;
+    top: 0;
+    left: 0;
+}
+
+.home .home-content {
+    z-index: 888;
+    color: white;
+    width: 71;
+}
+
+.home .home-content h1{
+    font-family: sans-serif;
+    font-size: 4em;
+    font-size: 700;
+    margin-bottom: 8px;
+}
+
+.home .home-content h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    margin-top: 7px;
+}
+
+.home .home-content h4{
+    font-family: fantasy;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: rgb(245, 193, 104);
+}
+
+.btn1{
+    margin-top: 25px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.btn2{
+    margin-top: 25px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 1040px){
+    .navigation{
+        padding: 12px 20px;
+    }
+
+    .home{
+        padding: 100px 20px;
+    }
+
+    .navigation .nav-menu li a{
+        right: 15px;
+    }
+}
